@@ -1,0 +1,27 @@
+build:
+  stage: build
+  image: 
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - >
+        /kaniko/executor
+        --cache=true --cache-repo=$CI_REGISTRY_IMAGE/cache
+        --context $CI_PROJECT_DIR
+        --dockerfile $CI_PROJECT_DIR/Dockerfile
+        --destination $CI_REGISTRY_IMAGE/capella-html-exporter:1.4.2
+
+pages:
+  stage: deploy
+  image: 
+    name: $CI_REGISTRY_IMAGE/capella-html-exporter:1.4.2
+    entrypoint: [""]
+  timeout: 10m
+  script:
+    - ./entrypoint.sh
+    - mkdir public/
+    - cp -r /workdir/validation /workdir/html_export *.html public/
+  artifacts:
+    paths:
+    - public

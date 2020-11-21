@@ -1,0 +1,6 @@
+# action.yml
+name: 'export-ife-html'
+description: 'Start the Capella HTML exporter Docker container'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
