@@ -23,8 +23,12 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Build
-        run: hugo --minify
+      - name: Execute Entrypoint
+        run: cd /workdir && ./entrypoint.sh
+      - name: Make public folder
+        run: mkdir ./public
+      - name: Copy artifacts
+        run: cp -r /workdir/validation /workdir/html_export *.html ./public/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
