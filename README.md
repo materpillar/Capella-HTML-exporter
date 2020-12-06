@@ -24,8 +24,16 @@ Map the folder where your model and your `entrypoint.sh` is located into the
 docker run --init -v `pwd`/workdir:/workdir capella-html-exporter
 ```
 
-Note: You must run eclipse in a virtual framebuffer, as it requires a X server.
+### Entrypoint.sh
+
+You must run eclipse in a virtual framebuffer, as it requires a X server.
 `Xvfb` is included in the docker image.
+
+The first step needs to import your project into the Capella workspace.  
+Note: It seems that Capella 1.4.2 has a bug in the
+`org.polarsys.kitalpha.doc.gen.business.capella.commandline` function that does
+not allow to use the `import` flag in there. There, we use the `validation` app
+first, to import the project into the Capella workspace.
 
 The `entrypoint.sh` could look like this:
 

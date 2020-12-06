@@ -4,3 +4,5 @@ description: 'Start the Capella HTML exporter Docker container'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - /github/workspace/artifacts

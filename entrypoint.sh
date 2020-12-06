@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# The first commandline argument contains the folder which shall have the
+# outputs of the export.
+results_folder=${1:-/workdir}
+mkdir -p ${results_folder}
+
 # Unpack the example project that is delivered with Capella
 pushd /opt/capella/samples
 unzip IFE_samplemodel.zip
@@ -10,11 +15,11 @@ xvfb-run -s "-screen 0 1280x720x24" \
 eclipse -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.capella.core.validation.commandline \
--data /workspace \
+-data /capella-workspace \
 -import "/opt/capella/samples/In-Flight Entertainment System" \
 -input "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
 -outputfolder "/In-Flight Entertainment System/validation" \
--logfile /workdir/log.html \
+-logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
 
 # Export the model as HTML
@@ -24,15 +29,15 @@ xvfb-run -s "-screen 0 1280x720x24" \
 eclipse -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
--data /workspace \
+-data /capella-workspace \
 -filepath "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
 -outputfolder "/In-Flight Entertainment System/html_export" \
--logfile /workdir/log.html \
+-logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
 
-# Copy the validation and html output to the /workdir that is mapped as a volume
-cp -r "/opt/capella/samples/In-Flight Entertainment System/html_export" /workdir/html_export
-cp -r "/opt/capella/samples/In-Flight Entertainment System/validation" /workdir/validation
+# Copy the validation and html output to the ${results_folder}/ that is mapped as a volume
+cp -r "/opt/capella/samples/In-Flight Entertainment System/html_export" ${results_folder}/html_export
+cp -r "/opt/capella/samples/In-Flight Entertainment System/validation" ${results_folder}/validation
 
 # Create index.html from stub
-sed 's/model-name-to-replace/In-Flight Entertainment System/g' index_stub.html > /workdir/index.html
+sed 's/model-name-to-replace/In-Flight Entertainment System/g' index_stub.html > ${results_folder}/index.html

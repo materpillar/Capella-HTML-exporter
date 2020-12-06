@@ -5,20 +5,20 @@ on:
 jobs:
   build_test_deploy:
     runs-on: ubuntu-latest
-    name: Test building HTML of IFE model and deploy container when successfull
+    name: Build HTML, push container and deploy HTML
     steps:
     - 
       name: Checkout
       uses: actions/checkout@v2
     - 
-      name: Test building the image and exporting HTML
+      name: Build the image and export HTML
       uses: ./
     - 
       name: Deploy HTML to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: artifacts
     - 
       name: Push image to Dockerhub
       uses: docker/build-push-action@v1

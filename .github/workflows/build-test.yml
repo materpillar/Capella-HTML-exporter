@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+      - develop
 
 jobs:
   build_test:
@@ -14,3 +15,9 @@ jobs:
     - 
       name: Test building the image and exporting HTML
       uses: ./
+    - 
+      name: Archive HTML export and validation report
+      uses: actions/upload-artifact@v2
+      with:
+        name: validation-report-html-export
+        path: artifacts
