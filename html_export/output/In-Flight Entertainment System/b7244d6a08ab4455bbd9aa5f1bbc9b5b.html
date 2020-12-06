@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta name="copyright" content="Copyright &copy; 2014 The Eclipse Foundation. All Rights Reserved." />
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+
+		<title>Capella - In-Flight Entertainment System - SystemFunction Determine Service Availability</title>
+		<link rel="stylesheet" href="../../scripts/jquery-treeview/jquery.treeview.css" />
+  		<script src="../../scripts/jquery-treeview/lib/jquery-1.11.1.js" type="text/javascript"></script>
+  		<script src="../../scripts/jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/simpletree.css" />		
+		<link title="default" rel="stylesheet" type="text/css" media="screen, projection" href="../../css/content.css"></link>
+		<script type="text/javascript">
+			if(parent.location.href == self.location.href) {
+				window.location.href = 'index.html?b7244d6a08ab4455bbd9aa5f1bbc9b5b';
+			}
+		</script>
+		
+		<style>
+			body {
+				background: white;
+				font-family: Arial;
+			}
+			.treeview {
+				background-color: white ;
+			}
+	
+			.treeview ul{ /*CSS for Simple Tree Menu*/
+				background-color: white;
+				font-size: 12px;
+			}
+	
+			.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+				background-color: white;
+			}
+		</style>
+		
+	</head>
+	
+	<body>	<div id="content">
+<img src="../icon/SystemFunction.png" alt="SystemFunction" style="float:left; margin-right:10px" /><h1><a href="../In-Flight Entertainment System/b7244d6a08ab4455bbd9aa5f1bbc9b5b.html">Determine Service Availability</a></h1>
+<p style="margin-top:3px; margin-bottom:3px"><span class="elementMetaClass">SystemFunction</span></p>
+<em class="elementPath"><a href="../In-Flight Entertainment System/bd182435e29042ceb99f6dd06e7ae7c7.html">In&#045;Flight Entertainment System</a> > <a href="../In-Flight Entertainment System/8f49452e61f24ba0b944352d1f4c4227.html">In&#045;Flight Entertainment System</a> > <a href="../In-Flight Entertainment System/1d30b780f22247949f785b70ce799bf0.html">System Analysis</a> > <a href="../In-Flight Entertainment System/0ded555d38754284af530ecf5f890295.html">System Functions</a> > <a href="../In-Flight Entertainment System/411a501a55224fca8b18edbeecb501a1.html">Root System Function</a> > <a href="../In-Flight Entertainment System/6d10ccfa1be84ab6a0d874941051595b.html">IFE System</a> > <a href="../In-Flight Entertainment System/8a4b74434f7349c2a175940a5d8accea.html">Manage Passenger Services Lifecycle</a> > <a href="../In-Flight Entertainment System/b7244d6a08ab4455bbd9aa5f1bbc9b5b.html">Determine Service Availability</a></em>
+
+<p>
+
+This function is responsible for computing the availability of passenger services based on the authorization scheme
+(airline business strategy) and the aircraft contraints.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Allocating Component</h2>
+
+<ul class="generatedList"><li><img src="../icon/SystemComponent.png" alt="SystemComponent" /> <a href="../In-Flight Entertainment System/e0a467397e504ea6b1980e5efb9ce68f.html">IFE System</a></li></ul>
+<h2>Incoming Functional Ports</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/fecdd587c206485fb5003972e89636ac.html">FIP 1</a></li><li><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/2c161e05569b45cda4ccc9eca32a570d.html">FIP 2</a></li></ul>
+
+<h2>Outgoing Functional Ports</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/7fdc1a1dfdc345f9bd248daf808cae98.html">FOP 1</a></li></ul>
+
+	<h2>Incoming Functional Exchanges</h2>
+	<table>
+	<tr>
+		<th>Exchange</th>
+		<th>Involving functional chains</th>
+		<th>Allocating component Exchanges</th>
+		<th>Distant Port</th>
+		<th>Source</th>
+		<th>Description</th>
+		<th>Allocated Exchange Items</th>
+		<th>Realized Functional Exchange</th>
+		<th>Realizing Functional Exchange</th>
+	</tr>
+	<tr><td id="id99249234-8b24-490f-b746-383bfe3087b8"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/992492348b24490fb746383bfe3087b8.html">Passenger Service Authorization Profile</a></td><td></td><td></td><td><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/5fbee0e5cba547c284f5d5050c91ccdd.html">FOP 1</a></td><td><img src="../icon/ActorSystemFunction.png" alt="SystemFunction" /> <a href="../In-Flight Entertainment System/5e0fff47a1a54a13867c18348bd894af.html">Set Passenger Service Authorization</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/68708a1d448b483f96cd4478cc3ff088.html">Passenger Service Authorization Profile</a></li></ul></td></tr>
+	<tr><td id="ide3c0b2f5-ec50-4dba-9808-04d6179ad01e"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/e3c0b2f5ec504dba980804d6179ad01e.html">IFE Operating Profile</a></td><td></td><td></td><td><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/05fd95ce873c47728156739a6383ce86.html">FOP 1</a></td><td><img src="../icon/SystemFunction.png" alt="SystemFunction" /> <a href="../In-Flight Entertainment System/3f8567f2538942c084a98a1360dc9572.html">Determine Operating Profiles</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/8c966c7851fb4436b36ecc857783924d.html">IFE Operating Profile</a></li></ul></td></tr>
+</table>
+	<h2>Outgoing Functional Exchanges</h2>
+	<table>
+	<tr>
+		<th>Exchange</th>
+		<th>Involving functional chains</th>
+		<th>Allocating component Exchanges</th>
+		<th>Distant Port</th>
+		<th>Target</th>
+		<th>Description</th>
+		<th>Allocated Exchange Items</th>
+		<th>Realized Functional Exchange</th>
+		<th>Realizing Functional Exchange</th>
+	</tr>
+	<tr><td id="id6dda546d-7b7f-4ff4-939c-d9c8e441a3a8"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/6dda546d7b7f4ff4939cd9c8e441a3a8.html">Service Availability</a></td><td></td><td></td><td><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/d720121f690742668af77ae5928e01f8.html">FIP 4</a></td><td><img src="../icon/SystemFunction.png" alt="SystemFunction" /> <a href="../In-Flight Entertainment System/2c453928a0984f8aa1e6fc545a2840d1.html">Handle Service Activation Requests</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/c2d17c2aff11417e989f48b54d4388a4.html">Available Passenger Service Request</a></li><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/31bc5010decb4d6296eb1628496778de.html">Available Passenger Services List</a></li><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/eb002c8e031e41298a22a4f175353b9e.html">Available Passenger Services List</a></li></ul></td></tr>
+</table>
+<h2>Modes and States</h2>
+<ul class="generatedList"><li><img src="../icon/Mode.png" alt="Mode" /> <a href="../In-Flight Entertainment System/b2c226dc43c6494eb6cbdbc652561725.html">Halted</a></li><li><img src="../icon/Mode.png" alt="Mode" /> <a href="../In-Flight Entertainment System/6c60fb2482ff482a87db58f00e0323f4.html">Ready</a></li><li><img src="../icon/Mode.png" alt="Mode" /> <a href="../In-Flight Entertainment System/755030387ad642129098b5764b7a430b.html">Degraded</a></li><li><img src="../icon/Mode.png" alt="Mode" /> <a href="../In-Flight Entertainment System/6171dcbd85b74452a0358ab9c1be37e7.html">Fully Operational</a></li></ul>
+
+<h2>Realizing Elements </h2>
+
+<ul class="generatedList"><li><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../In-Flight Entertainment System/5a58fd721b5741dc8b7bb0b8cf577236.html">Determine  Passenger Service Availability</a></li></ul>
+
+
+
+
+
+
+
+
+<h2>Diagrams displaying "Determine Service Availability"</h2>
+<ul>
+<li>
+<a href="../In-Flight Entertainment System/3324a06617a54b289dacad81cd4e7893.html#_pHpF4LEPEeSk6sURco8jXw">&#091;FS&#093; Handle Cabin Decompression Event</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/58d8d80a34ab4e60aee2fb8eb885583a.html#_CekP8JWHEeSAToX6gykiew">&#091;ES&#093; Start VOD Service</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/411a501a55224fca8b18edbeecb501a1.html#_HKbEkJjIEeSFKIU85IonOQ">&#091;SDFB&#093; &#091;BUILD&#093; All Functions</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/839ba87384424a01bd1a1f4c3cc6ed52.html#_EsbcMLKzEeSZM9DbsSoyxw">&#091;SDFB&#093; &#091;CAPABILITY&#093; Provide Video Entertainment Services</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/411a501a55224fca8b18edbeecb501a1.html#_HPnzIJTiEeSgObsjQ4XNVQ">&#091;SFBD&#093; All System Functions</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/8a4b74434f7349c2a175940a5d8accea.html#_lgryYJaZEeSjPIXNGA5cSg">&#091;SDFB&#093; &#091;CTX&#093; Manage Passenger Services Lifecycle</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/ef6ce3694a174655aa9666b3b69c7315.html#_uRslYLEOEeSk6sURco8jXw">&#091;FS&#093; Determine Passenger Service Availability</a> 
+</li>
+</ul>
+
+
+
+
+
+ </div>	</body>
+</html>

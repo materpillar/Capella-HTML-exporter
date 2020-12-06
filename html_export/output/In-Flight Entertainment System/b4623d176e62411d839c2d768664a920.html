@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta name="copyright" content="Copyright &copy; 2014 The Eclipse Foundation. All Rights Reserved." />
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+
+		<title>Capella - In-Flight Entertainment System - LogicalFunction Interrupt Current Service</title>
+		<link rel="stylesheet" href="../../scripts/jquery-treeview/jquery.treeview.css" />
+  		<script src="../../scripts/jquery-treeview/lib/jquery-1.11.1.js" type="text/javascript"></script>
+  		<script src="../../scripts/jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/simpletree.css" />		
+		<link title="default" rel="stylesheet" type="text/css" media="screen, projection" href="../../css/content.css"></link>
+		<script type="text/javascript">
+			if(parent.location.href == self.location.href) {
+				window.location.href = 'index.html?b4623d176e62411d839c2d768664a920';
+			}
+		</script>
+		
+		<style>
+			body {
+				background: white;
+				font-family: Arial;
+			}
+			.treeview {
+				background-color: white ;
+			}
+	
+			.treeview ul{ /*CSS for Simple Tree Menu*/
+				background-color: white;
+				font-size: 12px;
+			}
+	
+			.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+				background-color: white;
+			}
+		</style>
+		
+	</head>
+	
+	<body>	<div id="content">
+<img src="../icon/LogicalFunction.png" alt="LogicalFunction" style="float:left; margin-right:10px" /><h1><a href="../In-Flight Entertainment System/b4623d176e62411d839c2d768664a920.html">Interrupt Current Service</a></h1>
+<p style="margin-top:3px; margin-bottom:3px"><span class="elementMetaClass">LogicalFunction</span></p>
+<em class="elementPath"><a href="../In-Flight Entertainment System/bd182435e29042ceb99f6dd06e7ae7c7.html">In&#045;Flight Entertainment System</a> > <a href="../In-Flight Entertainment System/8f49452e61f24ba0b944352d1f4c4227.html">In&#045;Flight Entertainment System</a> > <a href="../In-Flight Entertainment System/cab89820127c4d24bfe731b2000cc23c.html">Logical Architecture</a> > <a href="../In-Flight Entertainment System/acc8c52c8fb340eca4e042ee0d6f9d8b.html">Logical Functions</a> > <a href="../In-Flight Entertainment System/0f580227c543436e979fee70432656e2.html">Root Logical Function</a> > <a href="../In-Flight Entertainment System/145e28dc9fbe4f01a3785af8cbe8e2d7.html">IFE System</a> > <a href="../In-Flight Entertainment System/11f3e0e8a78d4962bed89672b1167331.html">Manage Passenger Services Lifecycle</a> > <a href="../In-Flight Entertainment System/b4623d176e62411d839c2d768664a920.html">Interrupt Current Service</a></em>
+
+<p>
+
+This function is responsible for triggering passenger service interruptions as soon as an imposed video is played or an
+audio announcement is performed. When a VOD movie is running, this means for example that the movie as to be automatically
+paused and the current position stored.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Involving Functional Chains</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/8fe69f9074724e05ab571e0fa4e511a4.html">Watch Imposed Video on Private Screen</a></li><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/849047d6233a4f85bf608df1f145cda9.html">Broadcast Audio Announcement</a></li></ul>
+<h2>Allocating Component</h2>
+
+<ul class="generatedList"><li><img src="../icon/LogicalComponent.png" alt="LogicalComponent" /> <a href="../In-Flight Entertainment System/e02be1c5a1a24c11be30259e92ef5826.html">Seat TV Services Manager</a></li></ul>
+<h2>Incoming Functional Ports</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/fe5b214d67774d198ad219c0fcd32768.html">FIP 3</a></li><li><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/dddc93233db549abb33b6cf9224d5a9f.html">FIP 2</a></li></ul>
+
+<h2>Outgoing Functional Ports</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/e3e49f0019314afb9030234c5407b5e0.html">FOP1</a></li><li><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/20fd8d778da547d8b6afa16137714a3d.html">FOP 2</a></li></ul>
+
+	<h2>Incoming Functional Exchanges</h2>
+	<table>
+	<tr>
+		<th>Exchange</th>
+		<th>Involving functional chains</th>
+		<th>Allocating component Exchanges</th>
+		<th>Distant Port</th>
+		<th>Source</th>
+		<th>Description</th>
+		<th>Allocated Exchange Items</th>
+		<th>Realized Functional Exchange</th>
+		<th>Realizing Functional Exchange</th>
+	</tr>
+	<tr><td id="id7b1d7bc7-ec98-4f52-a99c-418a36980d63"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/7b1d7bc7ec984f52a99c418a36980d63.html">Service Interruption Command</a></td><td><ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/8fe69f9074724e05ab571e0fa4e511a4.html">Watch Imposed Video on Private Screen</a></li></ul></td><td><ul class="generatedList"><li><img src="../icon/ComponentExchange.png" alt="ComponentExchange" /> Service Management</li></ul></td><td><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/6707ddc00c124545a1d41dabb4989c8b.html">FOP 4</a></td><td><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../In-Flight Entertainment System/7069fd316eb049faae520b78307c2748.html">Process Imposed Video Controls</a></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/2d2e89367dc340dabb096d3f2ce71921.html">VOD Movie</a></li></ul></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/2903db78bb664227b88469222e103795.html">Service Interruption Command</a></li></ul></td></tr>
+	<tr><td id="id9a9a0ba6-1725-4026-92da-dcb18e1b0f4e"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/9a9a0ba61725402692dadcb18e1b0f4e.html">Service Interruption Command</a></td><td><ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/849047d6233a4f85bf608df1f145cda9.html">Broadcast Audio Announcement</a></li></ul></td><td><ul class="generatedList"><li><img src="../icon/ComponentExchange.png" alt="ComponentExchange" /> Service Management</li></ul></td><td><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../In-Flight Entertainment System/03979293d07a478c968c0fe7bbcd966a.html">FOP 4</a></td><td><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../In-Flight Entertainment System/39f96e898ead4742bc1f6eb0dd33990b.html">Process Audio Announcement</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/f81529939e774021a05f71b4c6a5c843.html">Service Interruption Command</a></li></ul></td></tr>
+</table>
+	<h2>Outgoing Functional Exchanges</h2>
+	<table>
+	<tr>
+		<th>Exchange</th>
+		<th>Involving functional chains</th>
+		<th>Allocating component Exchanges</th>
+		<th>Distant Port</th>
+		<th>Target</th>
+		<th>Description</th>
+		<th>Allocated Exchange Items</th>
+		<th>Realized Functional Exchange</th>
+		<th>Realizing Functional Exchange</th>
+	</tr>
+	<tr><td id="idfc741435-84fa-457c-b116-13d8c0f15249"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/fc74143584fa457cb11613d8c0f15249.html">Service Interruption Command</a></td><td><ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/8fe69f9074724e05ab571e0fa4e511a4.html">Watch Imposed Video on Private Screen</a></li><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/849047d6233a4f85bf608df1f145cda9.html">Broadcast Audio Announcement</a></li></ul></td><td></td><td><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/9855a1d452de4ed583d54aac50f911d1.html">FIP 2</a></td><td><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../In-Flight Entertainment System/910a61f13da0404f9db5c226af9a3c47.html">Handle VOD Service Activation and Interruption</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/ac16ed40d6fd4df784f9202ec5c8af13.html">Service Interruption Command</a></li></ul></td></tr>
+	<tr><td id="idb00d3b7f-56ac-4491-921e-fe1785c1c228"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/b00d3b7f56ac4491921efe1785c1c228.html">Audio Interruption Notification</a></td><td><ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../In-Flight Entertainment System/849047d6233a4f85bf608df1f145cda9.html">Broadcast Audio Announcement</a></li></ul></td><td></td><td><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../In-Flight Entertainment System/9d60ec03c1fd4896a3f78d40d57d0f6f.html">FIP 1</a></td><td><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../In-Flight Entertainment System/4ff700ef4f6b4151917be59064e5a225.html">Display Audio Interruption Screen on Seat TV</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../In-Flight Entertainment System/18fcdf21f3b345acb0cb966394a90b7f.html">Audio Interruption Notification</a></li></ul></td></tr>
+</table>
+<h2>Realized Elements</h2>
+
+<ul class="generatedList"><li><img src="../icon/SystemFunction.png" alt="SystemFunction" /> <a href="../In-Flight Entertainment System/d8b8c1bda2ea47fda7a90239408db1a5.html">Manage Passenger Service Interruptions</a></li></ul>
+
+
+<h2>Realizing Elements </h2>
+
+<ul class="generatedList"><li><img src="../icon/PhysicalFunction.png" alt="PhysicalFunction" /> <a href="../In-Flight Entertainment System/3f69f8bd704d438b8f05fc7d56363811.html">Interrupt Current Service</a></li></ul>
+
+
+
+
+
+
+
+
+<h2>Diagrams displaying "Interrupt Current Service"</h2>
+<ul>
+<li>
+<a href="../In-Flight Entertainment System/0f580227c543436e979fee70432656e2.html#_XUQUUJqIEeS8H_8qEOr5gg">&#091;LFBD&#093; All Functions</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/11f3e0e8a78d4962bed89672b1167331.html#_J-jLIJsPEeSbVI4NLkraew">&#091;LDFB&#093; &#091;CTX&#093; Manage Passenger Services Lifecycle</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/724d6db99175450b8f05023fcffec79c.html#_LaAX0K_cEeSD6doWwrg-qw">&#091;LAB&#093; &#091;BUILD&#093; All Components&#044; Functions&#044; CEs&#044; FEs</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/2c5abb7e32814651845839d383b9dcc0.html#_FremALbzEeSpk5KlhVegeg">&#091;ES&#093; Perform Audio Announcement</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/8fe69f9074724e05ab571e0fa4e511a4.html#_y5ttALFIEeSsWZm7HcO6OQ">&#091;LFCD&#093; Watch Imposed Video on Private Screen</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/9c08879f39bb42a1b1bfbadb30f67d12.html#_eb5W0LG9EeS6e8gaVHB-lg">&#091;FS&#093; Perform Audio Announcement</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/724d6db99175450b8f05023fcffec79c.html#_nKr5wLeNEeSJrshmHo2mKA">&#091;LAB&#093;&#091;CTX&#093; Broadcast Audio Announcement FC</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/849047d6233a4f85bf608df1f145cda9.html#_7eoQ4LeJEeSJrshmHo2mKA">&#091;LFCD&#093; Broadcast Audio Announcement</a> 
+</li>
+<li>
+<a href="../In-Flight Entertainment System/724d6db99175450b8f05023fcffec79c.html#_DmXfwKPQEeSgDIOKB3Rd0g">&#091;LAB&#093; &#091;BUILD&#093; Template</a> 
+</li>
+</ul>
+
+
+
+
+
+ </div>	</body>
+</html>
