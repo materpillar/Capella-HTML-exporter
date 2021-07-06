@@ -36,11 +36,11 @@ docker run --init -v `pwd`/workdir:/workdir capella-html-exporter
 
 ### Entrypoint.sh
 
-You must run eclipse in a virtual framebuffer as it requires a X server.
+You must run Capella in a virtual framebuffer as it requires a X server.
 `Xvfb` is included in the docker image.
 
 The first step needs to import your project into the Capella workspace.  
-Note: It seems that Capella 1.4.2 and 5.0.0 have a bug in the
+Note: It seems that Capella 1.4.2, 5.0.0 and 5.1.0 have a bug in the
 `org.polarsys.kitalpha.doc.gen.business.capella.commandline` function that does
 not allow to use the `import` flag in there. Therefore, we use the `validation` app
 first to import the project into the Capella workspace.
