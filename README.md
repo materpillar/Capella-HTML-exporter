@@ -20,15 +20,16 @@ By default, the container starts in the `/workdir` folder and executes
 Map the folder where your model and your `entrypoint.sh` is located into the
 `/workdir` folder of the container when running the image:
 
+```
 📦Capella-HTML-exporter
  ┗ 📂workdir
- ┃ ┣ 📂In-Flight Entertainment System
- ┃ ┃ ┣ 📜.project
- ┃ ┃ ┣ 📜In-Flight Entertainment System.afm
- ┃ ┃ ┣ 📜In-Flight Entertainment System.aird
- ┃ ┃ ┗ 📜In-Flight Entertainment System.capella
- ┃ ┗ 📜entrypoint.sh
-
+   ┣ 📂In-Flight Entertainment System
+   ┃ ┣ 📜.project
+   ┃ ┣ 📜In-Flight Entertainment System.afm
+   ┃ ┣ 📜In-Flight Entertainment System.aird
+   ┃ ┗ 📜In-Flight Entertainment System.capella
+   ┗ 📜entrypoint.sh
+```
 
 ```bash
 docker run --init -v `pwd`/workdir:/workdir capella-html-exporter

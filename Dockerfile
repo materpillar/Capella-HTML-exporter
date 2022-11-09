@@ -10,7 +10,7 @@ RUN apt-get update -qq && apt-get install -qq \
 
 ARG CAPELLA_VER=5.1.0
 ARG CAPELLA_TAR=https://download.eclipse.org/capella/core/products/releases/5.1.0-R20210615-075512/capella-5.1.0.202106150755-linux-gtk-x86_64.tar.gz
-ARG HTML_EX_ZIP=https://download.eclipse.org/capella/addons/xhtmldocgen/dropins/release/5.1.0/CapellaXHTMLDocGen-5.1.0.202106151504-Capella-5.1.0-dropins.zip
+ARG HTML_EX_ZIP=https://download.eclipse.org/capella/addons/xhtmldocgen/dropins/releases/5.1.1/CapellaXHTMLDocGen-5.1.1.202109061320-Capella-5.1.0-dropins.zip
 
 WORKDIR /opt/capella-${CAPELLA_VER}
 RUN wget -nv -c ${CAPELLA_TAR} -O capella.tar.gz
