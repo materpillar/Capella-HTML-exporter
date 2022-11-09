@@ -13,16 +13,15 @@ unzip IFE_samplemodel.zip
 popd
 
 # Import the project into the workspace and validate it
-xvfb-run -s "-screen 0 1280x720x24" \
-capella -nosplash -consoleLog \
--application org.polarsys.capella.core.commandline.core \
--appid org.polarsys.capella.core.validation.commandline \
--data /capella-workspace \
--import "/opt/capella-${CAPELLA_VER}/samples/In-Flight Entertainment System" \
--input "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
--outputfolder "/In-Flight Entertainment System/validation" \
--logfile ${results_folder}/log.html \
--forceoutputfoldercreation
+#xvfb-run -s "-screen 0 1280x720x24" \
+#capella -nosplash -consoleLog \
+#-application org.polarsys.capella.core.commandline.core \
+#-appid org.polarsys.capella.core.validation.commandline \
+#-data /capella-workspace \
+#-input "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
+#-outputfolder "/In-Flight Entertainment System/validation" \
+#-logfile ${results_folder}/log.html \
+#-forceoutputfoldercreation
 
 # Export the model as HTML
 # Note: It seems that Capella has a bug in this function that does not allow
@@ -32,6 +31,7 @@ capella -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
 -data /capella-workspace \
+-import "/opt/capella-${CAPELLA_VER}/samples/In-Flight Entertainment System" \
 -input "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
 -outputfolder "/In-Flight Entertainment System/html_export" \
 -logfile ${results_folder}/log.html \
@@ -39,7 +39,7 @@ capella -nosplash -consoleLog \
 
 # Copy the validation and html output to the ${results_folder}/ that is mapped as a volume
 cp -r "/opt/capella-${CAPELLA_VER}/samples/In-Flight Entertainment System/html_export" ${results_folder}/html_export
-cp -r "/opt/capella-${CAPELLA_VER}/samples/In-Flight Entertainment System/validation" ${results_folder}/validation
+#cp -r "/opt/capella-${CAPELLA_VER}/samples/In-Flight Entertainment System/validation" ${results_folder}/validation
 
 # Create index.html from stub
 sed 's/model-name-to-replace/In-Flight Entertainment System/g' index_stub.html > ${results_folder}/index.html
