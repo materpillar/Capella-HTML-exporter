@@ -8,8 +8,8 @@ RUN apt-get update -qq && apt-get install -qq \
 # This x11 stuff we apparently don't need:
 #RUN apt-get install -qq x11vnc x11-xkb-utils xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic x11-apps
 
-ARG CAPELLA_VER=5.1.0
-ARG CAPELLA_TAR=https://download.eclipse.org/capella/core/products/releases/5.1.0-R20210615-075512/capella-5.1.0.202106150755-linux-gtk-x86_64.tar.gz
+ARG CAPELLA_VER=5.2.0
+ARG CAPELLA_TAR=https://download.eclipse.org/capella/core/products/releases/5.2.0-R20211130-125709/capella-5.2.0.202111301257-linux-gtk-x86_64.tar.gz
 ARG HTML_EX_ZIP=https://download.eclipse.org/capella/addons/xhtmldocgen/dropins/releases/5.1.1/CapellaXHTMLDocGen-5.1.1.202109061320-Capella-5.1.0-dropins.zip
 
 WORKDIR /opt/capella-${CAPELLA_VER}
