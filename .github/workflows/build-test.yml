@@ -1,8 +1,7 @@
 on:
   push:
     branches:
-      - main
-      - develop
+      - '*'
 
 jobs:
   build_test:
@@ -11,13 +10,13 @@ jobs:
     steps:
     - 
       name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - 
       name: Test building the image and exporting HTML
       uses: ./
     - 
       name: Archive HTML export and validation report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: validation-report-html-export
         path: artifacts

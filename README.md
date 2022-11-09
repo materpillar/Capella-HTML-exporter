@@ -20,15 +20,16 @@ By default, the container starts in the `/workdir` folder and executes
 Map the folder where your model and your `entrypoint.sh` is located into the
 `/workdir` folder of the container when running the image:
 
+```
 📦Capella-HTML-exporter
  ┗ 📂workdir
- ┃ ┣ 📂In-Flight Entertainment System
- ┃ ┃ ┣ 📜.project
- ┃ ┃ ┣ 📜In-Flight Entertainment System.afm
- ┃ ┃ ┣ 📜In-Flight Entertainment System.aird
- ┃ ┃ ┗ 📜In-Flight Entertainment System.capella
- ┃ ┗ 📜entrypoint.sh
-
+   ┣ 📂In-Flight Entertainment System
+   ┃ ┣ 📜.project
+   ┃ ┣ 📜In-Flight Entertainment System.afm
+   ┃ ┣ 📜In-Flight Entertainment System.aird
+   ┃ ┗ 📜In-Flight Entertainment System.capella
+   ┗ 📜entrypoint.sh
+```
 
 ```bash
 docker run --init -v `pwd`/workdir:/workdir capella-html-exporter
@@ -39,11 +40,15 @@ docker run --init -v `pwd`/workdir:/workdir capella-html-exporter
 You must run Capella in a virtual framebuffer as it requires a X server.
 `Xvfb` is included in the docker image.
 
-The first step needs to import your project into the Capella workspace.  
-Note: It seems that Capella 1.4.2, 5.0.0 and 5.1.0 have a bug in the
-`org.polarsys.kitalpha.doc.gen.business.capella.commandline` function that does
-not allow to use the `import` flag in there. Therefore, we use the `validation` app
-first to import the project into the Capella workspace.
+The manual for the Capella XHTML Document Generator plugin describes that
+the import of the project into the workspace and the document generation can be
+performed in one command ("Import Capella project and generate inside it")  
+Yet, it seems that Capella 1.4.2, 5.0.0, 5.1.0 and 5.2.0 have a bug in the
+`org.polarsys.kitalpha.doc.gen.business.capella.commandline` function that will
+lead to the project being imported, but no HTML generation being done.
+Therefore, we use the `validation` app first to import the project into the
+Capella workspace and do the XHTML generation in a second command without the
+import.
 
 The `entrypoint.sh` could look like this:
 
