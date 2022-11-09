@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CAPELLA_VER=5.1.0
+CAPELLA_VER=5.2.0
 
 # The first commandline argument contains the folder which shall have the
 # outputs of the export.
