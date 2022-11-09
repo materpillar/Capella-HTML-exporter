@@ -74,7 +74,7 @@ capella -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
 -data /workspace \
--filepath "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
+-input "/In-Flight Entertainment System/In-Flight Entertainment System.aird" \
 -outputfolder "/In-Flight Entertainment System/html_export" \
 -logfile /workdir/log.html \
 -forceoutputfoldercreation
