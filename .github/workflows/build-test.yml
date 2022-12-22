@@ -8,14 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     name: Test building HTML of IFE model
     steps:
-    - 
-      name: Checkout
+
+    - name: Checkout
       uses: actions/checkout@v3
-    - 
-      name: Test building the image and exporting HTML
+
+    - name: Test building the image and exporting HTML
       uses: ./
-    - 
-      name: Archive HTML export and validation report
+      with:
+        entrypoint: model/entrypoint.sh
+        model-name: capella-automations
+        path-model-folder: model/capella-automations
+
+    - name: Archive HTML export and validation report
       uses: actions/upload-artifact@v3
       with:
         name: validation-report-html-export
