@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concern="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/6.0.0" xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/6.0.0" xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/6.0.0" xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/6.0.0" xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/6.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_l55eMIIBEe21fOR_AAoFbQ" selectedViews="_mG4KQIIBEe21fOR_AAoFbQ _mIDO8IIBEe21fOR_AAoFbQ _mOqNQIIBEe21fOR_AAoFbQ _mPnPgIIBEe21fOR_AAoFbQ _mPxAgIIBEe21fOR_AAoFbQ _mSLbUIIBEe21fOR_AAoFbQ _mToM0IIBEe21fOR_AAoFbQ" version="15.0.0.202201261500">
+  <viewpoint:DAnalysis uid="_l55eMIIBEe21fOR_AAoFbQ" selectedViews="_mG4KQIIBEe21fOR_AAoFbQ _mIDO8IIBEe21fOR_AAoFbQ _mOqNQIIBEe21fOR_AAoFbQ _mPnPgIIBEe21fOR_AAoFbQ _mPxAgIIBEe21fOR_AAoFbQ _mSLbUIIBEe21fOR_AAoFbQ _mToM0IIBEe21fOR_AAoFbQ" version="15.1.0.202211301600">
     <semanticResources>capella-automations.afm</semanticResources>
     <semanticResources>capella-automations.capella</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_mG4KQIIBEe21fOR_AAoFbQ">
@@ -8,7 +8,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_mIDO8IIBEe21fOR_AAoFbQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_p4h28IIBEe21fOR_AAoFbQ" name="[OAB] Operational Entities" repPath="#_p4GZIIIBEe21fOR_AAoFbQ" changeId="6769d8cb-2b7c-41fa-87a9-3c91d64da1ee">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_p4h28IIBEe21fOR_AAoFbQ" name="[OAB] Operational Entities" repPath="#_p4GZIIIBEe21fOR_AAoFbQ" changeId="1682107458554">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="capella-automations.capella#cee7b8fd-2e72-483e-ad48-409a5406c545"/>
       </ownedRepresentationDescriptors>
@@ -24,14 +24,14 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_mSLbUIIBEe21fOR_AAoFbQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tGvp8IICEe21fOR_AAoFbQ" name="[SAB] Structure" repPath="#_tGnuIIICEe21fOR_AAoFbQ" changeId="0abc3658-d969-4bea-9e44-0fcdbe6196f9">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tGvp8IICEe21fOR_AAoFbQ" name="[SAB] Structure" repPath="#_tGnuIIICEe21fOR_AAoFbQ" changeId="1682107458554">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='System%20Architecture%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg" href="capella-automations.capella#886a345f-56b9-4e12-a84d-ddce53e83e0b"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_mToM0IIBEe21fOR_AAoFbQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YPtUMIIDEe21fOR_AAoFbQ" name="[LAB] Structure" repPath="#_YPobsIIDEe21fOR_AAoFbQ" changeId="605573aa-5138-4e03-ab0e-ce1d879d896e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YPtUMIIDEe21fOR_AAoFbQ" name="[LAB] Structure" repPath="#_YPobsIIDEe21fOR_AAoFbQ" changeId="1682107458554">
         <eAnnotations xmi:type="description:DAnnotation" uid="_YPyMsIIDEe21fOR_AAoFbQ" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YPyMsYIDEe21fOR_AAoFbQ" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YPyzwIIDEe21fOR_AAoFbQ" key="hide.computed.physical.links.filter" value="true"/>
