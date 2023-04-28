@@ -1,33 +1,30 @@
 on:
-  push:
-    branches:
-      - '*'
-# All branches that are not slashed! (such as release/...)
+  release:
+    types: published
 
 jobs:
-  build:
+  build_publish:
     runs-on: ubuntu-latest
-    name: Build container and test
+    name: Push container to Dockerhub
     steps:
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
-    - name: Build Image
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Push image to Dockerhub
       uses: docker/build-push-action@v4
       with:
-        push: false
-        load: true
-        tags: mtreber/capella-html-exporter:latest
+        tags: mtreber/capella-html-exporter:${GITHUB_REF_NAME}
+        push: true
 
     - name: Checkout
       uses: actions/checkout@v3
-
-#    - name: Test by manually invoking docker
-#      run: |
-#        docker run --rm -v `pwd`/model:/workdir mtreber/capella-html-exporter:latest capella-automations
-#        pwd
-#        ls -l
 
     - name: Test using the action
       uses: ./

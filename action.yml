@@ -1,4 +1,5 @@
 # action.yml
+
 name: 'export-ife-html'
 description: 'Start the Capella HTML exporter Docker container'
 inputs:
@@ -6,12 +7,19 @@ inputs:
     description: 'Name of the model (<model-name>.aird)'
     required: true
   path-model-folder:
-    description: 'Path to the folder containing the <model-name>.aird file'
+    description: 'Relative path to the folder containing the <model-name>.aird file'
     required: true
+  output-folder:
+    description: |
+       'Path inside the capella-html-exporter container where the
+        outputs shall be stored. Defaults to /github/workspace/artifacts'
+    required: false
+    default: '/github/workspace/artifacts'
+
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: mtreber/capella-html-exporter:latest
   args:
     - ${{ inputs.model-name }}
     - /github/workspace/${{ inputs.path-model-folder }}
-    - /github/workspace/artifacts
+    - ${{ inputs.output-folder }}
