@@ -20,7 +20,7 @@ jobs:
     - name: Push image to Dockerhub
       uses: docker/build-push-action@v4
       with:
-        tags: mtreber/capella-html-exporter:${GITHUB_REF_NAME}
+        tags: mtreber/capella-html-exporter:v6.1.0-0
         push: true
 
     - name: Checkout
