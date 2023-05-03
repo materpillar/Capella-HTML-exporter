@@ -18,7 +18,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: mtreber/capella-html-exporter:latest
+  image: 'docker://mtreber/capella-html-exporter:latest'
   args:
     - ${{ inputs.model-name }}
     - /github/workspace/${{ inputs.path-model-folder }}
